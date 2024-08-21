@@ -1,0 +1,154 @@
+body {
+  background-color: #2b4495;
+}
+
+.weather-card {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #315ae2;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Styles for the search area */
+.weather-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-search input {
+  width: 100%;
+  max-width: 400px; /* Adjust max-width for larger screens */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.weather-search button {
+  margin-top: 10px;
+  background-color: #f3f5f8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1em;
+}
+
+.weather-search img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Styles for error messages */
+.weather-error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for weather information */
+.weather-info {
+  text-align: center;
+}
+
+.weather-icon {
+  width: 100px; /* Larger icon for better visibility */
+  height: 100px;
+}
+
+.weather-temp {
+  font-size: 2.5em;
+}
+
+.weather-feels {
+  font-size: 1.5em;
+}
+
+.weather-city {
+  font-size: 2em;
+}
+
+.weather-country {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.weather-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.weather-detail img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.weather-humidity,
+.weather-wind {
+  font-size: 1.5em;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .weather-search {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .weather-search input {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .weather-search button {
+    margin-left: 10px;
+    padding: 10px 20px;
+  }
+
+  .weather-details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .weather-detail {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .weather-card {
+    max-width: 80%;
+  }
+
+  .weather-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .weather-temp {
+    font-size: 3em;
+  }
+
+  .weather-feels {
+    font-size: 1.8em;
+  }
+
+  .weather-city {
+    font-size: 2.5em;
+  }
+}
